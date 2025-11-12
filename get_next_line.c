@@ -6,7 +6,7 @@
 /*   By: yikoubaz <yikoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 10:42:42 by yikoubaz          #+#    #+#             */
-/*   Updated: 2025/11/12 11:26:32 by yikoubaz         ###   ########.fr       */
+/*   Updated: 2025/11/12 13:17:04 by yikoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,12 +47,10 @@ char	*ft_extract_line(char *stash)
 	if (!stash)
 		return (NULL);
 	i = 0;
-	while (stash[i])
-	{
-		if (stash[i] == '\n')
-			break ;
+	while (stash[i] && stash[i] != '\n')
 		i++;
-	}
+	if (stash[i] == '\n')
+		i++;
 	line = malloc(i + 1);
 	if (!line)
 		return (NULL);
