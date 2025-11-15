@@ -6,11 +6,11 @@
 /*   By: yikoubaz <yikoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 11:24:22 by yikoubaz          #+#    #+#             */
-/*   Updated: 2025/11/12 12:52:51 by yikoubaz         ###   ########.fr       */
+/*   Updated: 2025/11/14 17:36:20 by yikoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 size_t	ft_strlen(char *s)
 {

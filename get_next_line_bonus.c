@@ -6,11 +6,11 @@
 /*   By: yikoubaz <yikoubaz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 11:25:42 by yikoubaz          #+#    #+#             */
-/*   Updated: 2025/11/12 12:52:37 by yikoubaz         ###   ########.fr       */
+/*   Updated: 2025/11/14 17:35:43 by yikoubaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_read_line(int fd, char *stash)
 {
@@ -94,10 +94,10 @@ char	*ft_save_line(char *stash)
 
 char	*get_next_line(int fd)
 {
-	static char	*stash[1024];
+	static char	*stash[FD_MAX];
 	char		*line;
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (fd < 0 || fd > FD_MAX || BUFFER_SIZE <= 0)
 		return (NULL);
 	stash[fd] = ft_read_line(fd, stash[fd]);
 	if (!stash[fd] || !*stash[fd])
