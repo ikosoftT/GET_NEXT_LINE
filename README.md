@@ -204,37 +204,30 @@ char	*get_next_line(int fd)
 	stash = ft_save_line(stash);
 	return (line);
 }
-```
+
 *Note : Remmeber the File (test.txt) let Goo Through the Flow Now,gooo*
-
 First i pass FD of (test.txt)
-
 i Call readFile FUNC with those params (fd,stash) Wait.. STASH ?? 
-
 <b>STASH</b> its a static variable <b>Static Varaible</b> What is this ?? bruu..
-
 okey okey haha :)..
-
 ### Static Varaible : its all variables defined with 'static' keyword
-
 wich Tells the compiler to store it in <strong>DATA-SEGMENT-Storage</strong>
-
 well : the value Contains will not Erase tiil the <strong>Whoole Programm.Die :)</strong>
-
 not Like <b>Normal-Varaibles</b>
-
 they Die , and Live with the function <b>Call</b>.
-
 2 - Inside read_func we have a <strong>System Call Function</strong>
-
 ho....<b>read functionnnnnnnn</b> haha yeah!!
-
 ## System Call : before , we Must KNOW there is <b>USER MOD</b> and <b>Kernel Mod</b>
-
 ### USER-MOD = almost Programms runing on our system : they don't have direct access to Our's Computer <b>Resources : such as. [RAM,CPU]</b> etc..
-
 this Desgined to Protect Our SYSTEM CRASH.
-
 ### KERNEL-MOD = before What is KERNEL ? kerenel its  peaice of Software that Manges BothSIdes (Software and HardWare) Make them Communicate .
 
-"
+# Additional Learning 
+    ## 1  - File Descriptors : 
+     https://www.codequoi.com/en/handling-a-file-by-its-descriptor-in-c/
+
+# Finaly 
+
+*Everything Was Made By Love && Passion BY <b>yikoubaz</b>.*
+
+*BIG THANKS FOR : 1337.MA*
