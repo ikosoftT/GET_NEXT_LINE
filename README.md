@@ -204,7 +204,8 @@ char	*get_next_line(int fd)
 	stash = ft_save_line(stash);
 	return (line);
 }
-
+```
+"
 *Note : Remmeber the File (test.txt) let Goo Through the Flow Now,gooo*
 First i pass FD of (test.txt)
 i Call readFile FUNC with those params (fd,stash) Wait.. STASH ?? 
@@ -221,7 +222,7 @@ ho....<b>read functionnnnnnnn</b> haha yeah!!
 ### USER-MOD = almost Programms runing on our system : they don't have direct access to Our's Computer <b>Resources : such as. [RAM,CPU]</b> etc..
 this Desgined to Protect Our SYSTEM CRASH.
 ### KERNEL-MOD = before What is KERNEL ? kerenel its  peaice of Software that Manges BothSIdes (Software and HardWare) Make them Communicate .
-
+"
 # Additional Learning 
     ## 1  - File Descriptors : 
      https://www.codequoi.com/en/handling-a-file-by-its-descriptor-in-c/
