@@ -1,4 +1,4 @@
-*This Project has been Created as part of 42 curriculum by <yikoubaz>.*
+*This Project has been Created as part of 42 curriculum by <b style="color:green;">yikoubaz</b>.*
 
 # get_next_line
 
